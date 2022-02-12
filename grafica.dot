@@ -1,7 +1,0 @@
-graph G { 
-Node0[label="3 -> cinco"];
-Node1[label="1 -> otro"];
-Node0 -> Node1;
-Node2[label="1 -> hola"];
-Node1 -> Node2;
-}

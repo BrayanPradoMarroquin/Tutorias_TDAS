@@ -1,0 +1,7 @@
+graph G { 
+Node0[label="3 -> Pedro"];
+Node1[label="2 -> Pedro"];
+Node0 -- Node1;
+Node2[label="1 -> Juan"];
+Node1 -- Node2;
+}

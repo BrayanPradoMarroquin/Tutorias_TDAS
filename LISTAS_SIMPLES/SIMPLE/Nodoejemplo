@@ -1,0 +1,13 @@
+//NODO DE LA LISTA 
+
+clase nodo1
+    nombre
+    columnas
+    filas
+    fichas
+    salida
+    nodoBase  //Manipulacion de la Matriz
+
+    ----------------
+    Metodo crearMatriz(columnas, fichas)
+        nodoBase // dar tamaño a la Matriz
