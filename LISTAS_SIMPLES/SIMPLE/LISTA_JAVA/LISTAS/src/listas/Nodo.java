@@ -10,40 +10,47 @@ package listas;
  * @author Usuario
  */
 public class Nodo {
-    private int id;
-    private Nodo siguiente;
+    private int edad;
+    private String nombre;
+    private String[] aficiones;
 
-    public void Nodo(){
-        this.id = 0;
-        this.siguiente = null;
+    public Nodo(int edad, String nombre, String[] aficiones) {
+        this.edad = edad;
+        this.nombre = nombre;
+        this.aficiones = aficiones;
+    }
+
+    public Nodo() {
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.nombre = Nombre;
+    }
+
+    public String[] getAficiones() {
+        return aficiones;
+    }
+
+    public void setAficiones(String[] aficiones) {
+        this.aficiones = aficiones;
+    }
+
+    @Override
+    public String toString() {
+        return "Nodo{" + "edad=" + edad + ", Nombre=" + nombre + ", aficiones=" + aficiones + '}';
     }
     
-    /**
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    /**
-     * @return the siguiente
-     */
-    public Nodo getSiguiente() {
-        return siguiente;
-    }
-
-    /**
-     * @param siguiente the siguiente to set
-     */
-    public void setSiguiente(Nodo siguiente) {
-        this.siguiente = siguiente;
-    }
     
 }

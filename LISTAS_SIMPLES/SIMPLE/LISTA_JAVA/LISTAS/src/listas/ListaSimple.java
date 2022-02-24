@@ -36,7 +36,7 @@ public class ListaSimple {
     //Agrega los elementos al inicio de la lista
     public void agregarInicio(int id){
         Nodo nuevo = new Nodo();
-        nuevo.setId(id);
+        nuevo.setNombre(Nombre);
         if(vacio()){
             inicio = nuevo;
         }else{
