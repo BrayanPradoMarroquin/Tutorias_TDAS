@@ -27,11 +27,11 @@ class Lista:
         cont = 0
         cadena = ""
         file = open('grafica.dot', 'w')
-        cadena = cadena + 'graph G { \n'
+        cadena = cadena + 'digraph G { \n'
         while(Nuevo!=None):
             cadena = cadena + 'Node'+str(cont)+'[label=\"'+str(Nuevo.getid())+" -> "+Nuevo.getnombre()+'\"];\n'
             if(Nuevo!=self.cabeza):
-                cadena = cadena + 'Node'+str(cont-1)+' -- '+'Node'+str(cont)+';\n'
+                cadena = cadena + 'Node'+str(cont-1)+' -> '+'Node'+str(cont)+';\n'
             Nuevo = Nuevo.siguiente
             cont+=1
         cadena = cadena + '}'

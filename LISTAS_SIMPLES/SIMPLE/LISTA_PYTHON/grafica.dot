@@ -1,9 +1,7 @@
-graph G { 
+digraph G { 
 Node0[label="3 -> cinco"];
 Node1[label="1 -> otro"];
-Node0 -- Node1;
-Node1 -- Node0;
+Node0 -> Node1;
 Node2[label="1 -> hola"];
-Node1 -- Node2;
-Node2 -- Node1;
+Node1 -> Node2;
 }
