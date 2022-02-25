@@ -1,0 +1,12 @@
+graph G { 
+Node0[label="Leopardo"];
+Node1[label="suricata"];
+Node0 -- Node1;
+Node2[label="mapache"];
+Node1 -- Node2;
+Node3[label="loro"];
+Node2 -- Node3;
+Node4[label="perro"];
+Node3 -- Node4;
+Node5 -- Node0;
+}
