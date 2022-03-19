@@ -37,7 +37,7 @@ class Matriz_O:
         aux = self.cabeza
         img =""
         while (aux.aba!=None) | (aux.sig!=None):
-            img = img + aux.dato
+            img = img + " " +aux.dato
             if aux.sig !=None:
                 aux = aux.sig
             else:
@@ -46,5 +46,5 @@ class Matriz_O:
                     aux = aux.aba
                     while aux.ant!=None:
                         aux = aux.ant
-        img = img+aux.dato
+        img = img+" "+aux.dato
         return img
