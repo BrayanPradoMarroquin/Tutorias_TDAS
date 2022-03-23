@@ -42,6 +42,16 @@ class ListaCircular:
                 aux.lista.ingresar(data)
                 break 
 
+    #------------------------ metodo de llenado de la tercera Lista --------------------------------------
+    def llenar2(self, id, id2, data):
+        aux = self.cabeza
+        while(aux!=None):
+            if(aux.dato!=id):
+                aux = aux.siguiente
+            else:
+                aux.lista.llenar(id2, data)
+                break 
+
     #------------------------- Metodo de recorrido de Segunda Lista y Lista primaria --------------------
 
     def recorrer2(self):
@@ -51,8 +61,19 @@ class ListaCircular:
         else:
             while(aux!=None):
                 print("-------", aux.dato)
-                print(aux.lista.Recorrer())
+                aux.lista.Recorrer()
                 aux = aux.siguiente
+
+    def recorrer3(self):
+        aux = self.cabeza
+        if (self.vacio()):
+            print("La lista esta vacia")
+        else:
+            while(aux!=None):
+                print("-------", aux.dato)
+                aux.lista.recorrer2()
+                aux = aux.siguiente
+
 
     #------------------------- Metodo para Graficar Lista --------------------------------------------------
     def graficar(self):

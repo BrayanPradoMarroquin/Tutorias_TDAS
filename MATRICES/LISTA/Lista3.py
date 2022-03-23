@@ -1,13 +1,12 @@
 import os
-from Lista3 import ListaCircular3
 
 class Nodo2:
     def __init__(self, dato):
         self.dato = dato
-        self.lista = ListaCircular3()
+        self.lista = None
         self.siguiente = None
 
-class ListaCircular2:
+class ListaCircular3:
     def __init__(self):
         self.cabeza = None
 
@@ -32,26 +31,6 @@ class ListaCircular2:
             while (aux!=None):
                 print(aux.dato)
                 aux = aux.siguiente
-
-    def llenar(self, id, data):
-        aux = self.cabeza
-        while(aux!=None):
-            if(aux.dato!=id):
-                aux = aux.siguiente
-            else:
-                aux.lista.ingresar(data)
-                break 
-
-    def recorrer2(self):
-        aux = self.cabeza
-        if (self.vacio()):
-            print("La lista esta vacia")
-        else:
-            while(aux!=None):
-                print("----", aux.dato)
-                aux.lista.Recorrer()
-                aux = aux.siguiente
-
 
     #------------------------- Metodo para Graficar Lista --------------------------------------------------
     def graficar(self):
